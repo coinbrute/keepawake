@@ -90,7 +90,7 @@ jobs:
             --input target \
             --main-jar KeepAwake.jar \
             --main-class com.drew.keepawake.Main \
-            --icon icons/linux/keepawake.png \
+            --icon icons/linux/KeepAwake.png \
             --vendor "Drew"
       - name: Package RPM
         run: |
@@ -102,7 +102,7 @@ jobs:
             --input target \
             --main-jar KeepAwake.jar \
             --main-class com.drew.keepawake.Main \
-            --icon icons/linux/keepawake.png \
+            --icon icons/linux/KeepAwake.png \
             --vendor "Drew"
       - uses: actions/upload-artifact@v4
         with:
