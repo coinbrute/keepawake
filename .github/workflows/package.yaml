@@ -20,7 +20,7 @@ jobs:
       - name: Package DMG
         run: |
           mkdir -p dist/mac
-          jpackage --type dmg --dest dist/mac --name KeepAwake --app-version ${GITHUB_REF_NAME#v} --input target --main-jar KeepAwake.jar --main-class com.drew.keepawake.Main --icon icons/mac/KeepAwake.png --vendor "Drew"
+          jpackage --type dmg --dest dist/mac --name KeepAwake --app-version ${GITHUB_REF_NAME#v} --input target --main-jar KeepAwake.jar --main-class com.drew.keepawake.Main --icon icons/mac/KeepAwake.icns --vendor "Drew"
       - uses: actions/upload-artifact@v4
         with:
           name: keepawake-macos
